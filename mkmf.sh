@@ -52,7 +52,7 @@ LIBS=
 # Since we no longer use the NDK, the AOSP has to have been
 # built before using this script (targetting generic/emulator).
 
-CC=$aospdir/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-gcc
+CC=$aospdir/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-gcc
 addvar CPPFLAGS \
     -I$aospdir/libnativehelper/include/nativehelper \
     -isystem $aospdir/system/core/include \
@@ -141,7 +141,7 @@ addvar LIBS \
     -lc \
     -Wl,--no-whole-archive \
     $aospdir/out/target/product/generic/obj/STATIC_LIBRARIES/libcompiler-rt-extras_intermediates/libcompiler-rt-extras.a \
-    $aospdir/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/armv7-a/libgcc.a \
+    $aospdir/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/../lib/gcc/arm-linux-androideabi/4.9.0/armv7-a/libgcc.a \
     $aospdir/out/target/product/generic/obj/lib/crtend_android.o
 
 
